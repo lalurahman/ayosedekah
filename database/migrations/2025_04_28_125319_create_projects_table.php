@@ -18,6 +18,7 @@ return new class extends Migration
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
                 $table->string('title');
+                $table->string('slug')->unique();
                 $table->text('description');
                 $table->string('image')->nullable();
                 $table->bigInteger('goal_amount');

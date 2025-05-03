@@ -11,4 +11,5 @@ Route::prefix('project')
     ->group(function () {
         Route::get('/', [ProjectController::class, 'index'])->name('index');
         Route::get('/{id}', [ProjectController::class, 'show'])->name('show');
+        Route::get('/{slug}/donate', [ProjectController::class, 'donate'])->name('donate');
     });

@@ -40,9 +40,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-1.png"
+                                    src="{{ asset('assets/images/gallery/donate-1.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -53,7 +53,10 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that your
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you
+                                            that your
                                             donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
@@ -90,9 +93,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-2.png"
+                                    src="{{ asset('assets/images/gallery/donate-2.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -103,7 +106,10 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that your
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you
+                                            that your
                                             donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
@@ -140,9 +146,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-3.png"
+                                    src="{{ asset('assets/images/gallery/donate-3.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -153,7 +159,10 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that your
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you
+                                            that your
                                             donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
@@ -190,9 +199,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-6.png"
+                                    src="{{ asset('assets/images/gallery/donate-6.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -203,7 +212,9 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you that
                                             your donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
@@ -240,9 +251,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-7.png"
+                                    src="{{ asset('assets/images/gallery/donate-7.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -253,7 +264,9 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you that
                                             your donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
@@ -290,9 +303,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
                     <div class="single-donate h-calc">
                         <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
+                            <a href="{{ route('project.donate', 'safa') }}"> <img
                                     class="w-100"
-                                    src="assets/images/gallery/donate-8.png"
+                                    src="{{ asset('assets/images/gallery/donate-8.png') }}"
                                     alt="img"
                                 > </a>
                             <div class="donate-badge">
@@ -303,7 +316,9 @@
                         <div class="donate-info">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you that
+                                    <h4 class="title text-capitalize"><a href="{{ route('project.donate', 'safa') }}">We
+                                            assure
+                                            you that
                                             your donation will be used wisely.</a></h4>
                                     <p class="subtitle">We understand that there are many people organization The seeking
                                         support,</p>
