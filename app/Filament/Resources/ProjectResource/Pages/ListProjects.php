@@ -13,7 +13,10 @@ class ListProjects extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->icon('heroicon-s-plus')
+                ->label('New Project')
+                ->iconSize('w-3 h-3'),
         ];
     }
 }

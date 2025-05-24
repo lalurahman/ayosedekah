@@ -19,7 +19,7 @@ class ProjectResource extends Resource
 {
     protected static ?string $model = Project::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-bookmark';
+    protected static ?string $navigationIcon = 'heroicon-s-folder';
 
     protected static ?string $navigationLabel = 'Project';
 
@@ -85,8 +85,15 @@ class ProjectResource extends Resource
                     ->label('#')
                     ->rowIndex(),
 
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Image')
+                    ->circular()
+                    ->size(50)
+                    ->default('https://via.placeholder.com/50'),
+
                 Tables\Columns\TextColumn::make('title')
                     ->label('Title')
+                    ->limit(50)
                     ->searchable()
                     ->sortable(),
 
@@ -107,9 +114,9 @@ class ProjectResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make()
-                    ->hiddenLabel()
-                    ->icon('heroicon-s-eye'),
+                // Tables\Actions\ViewAction::make()
+                //     ->hiddenLabel()
+                //     ->icon('heroicon-s-eye'),
 
                 Tables\Actions\EditAction::make()
                     ->hiddenLabel()
