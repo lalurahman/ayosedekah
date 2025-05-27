@@ -38,10 +38,9 @@
         <div class="container">
             <div class="row g-24 justify-content-between">
                 <div class="col-lg-7">
-                    <!-- Payment -->
                     <div class="card-style box-shadow border-0 p-4">
                         <div class="small-tittle mb-50">
-                            <h2 class="title text-capitalize font-600 position-relative">Pilih Nominal</h2>
+                            <h2 class="title text-capitalize font-600 position-relative">Informasi Transfer</h2>
                         </div>
                         <ul class="selectPricing mb-20">
                             <li
@@ -79,7 +78,7 @@
                                         >
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-12 col-lg-6">
                                     <div class="contact-form mb-24">
                                         <label class="contact-label">Nama</label>
                                         <input
@@ -89,7 +88,7 @@
                                         >
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-12 col-lg-6">
                                     <div class="contact-form mb-24">
                                         <label class="contact-label">Nomor HP</label>
                                         <input
@@ -101,75 +100,8 @@
                             </div>
 
                             <div class="form-group col-12 payment-gateway-wrapper mt-10">
-                                <ul class="payment-gateway-list mb-10">
-                                    <li class="single-gateway-item selected"><img
-                                            src="assets/images/icon/payment-method1.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method2.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method3.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method4.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method6.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method7.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method8.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method10.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method12.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method13.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method15.png"
-                                            alt="img"
-                                        ></li>
-                                    <li class="single-gateway-item "><img
-                                            src="assets/images/icon/payment-method16.png"
-                                            alt="img"
-                                        ></li>
-                                </ul>
-                                <div class="remember-me terms-condition">
-                                    <label>
-                                        <input
-                                            class="checkbox-style"
-                                            type="checkbox"
-                                            value="remember"
-                                            name="remember"
-                                        >
-                                        <small>I agree to all the
-                                            <a href="terms-condition.html">
-                                                <span>Terms</span></a> and <a href="privacy-policy.html"><span>Privacy
-                                                    policy</span>
-                                            </a>
-                                        </small>
-                                        <span class="checkmark-style"></span>
-                                    </label>
-                                </div>
                                 <a
-                                    href="payment-success.html"
+                                    href="#"
                                     class="btn-primary-submit"
                                 >Donasi Sekarang</a>
                             </div>
@@ -180,8 +112,8 @@
                     <div class="blog-section-two">
                         <div class="single-blog h-calc">
                             <div class="blog-img position-relative">
-                                <a href="blog-details.html"> <img
-                                        src="{{ asset('assets/images/gallery/gallery-2.png') }}"
+                                <a href="#"> <img
+                                        src="{{ asset('storage/' . $project->image) }}"
                                         class="img-fluid w-100"
                                         alt="img"
                                     > </a>
@@ -192,18 +124,14 @@
                                 <div class="blog-info">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="blog-info-title">
-                                            <h4 class="title text-capitalize">Detail Donasi</h4>
-                                            <p class="subtitle">We understand that there are many people
-                                                organization The seeking support</p>
+                                            <h4 class="title text-capitalize">{{ $project->title }}</h4>
+                                            <p class="subtitle">{{ $project->description }}</p>
                                             <div class="priceListing">
                                                 <ul class="listing">
                                                     <li class="listItem">
-                                                        <p class="leftCap font-600">Donasi Anda</p>
-                                                        <p class="rightCap total_donation_amount font-600">Rp. 20.000</p>
-                                                    </li>
-                                                    <li class="listItem">
-                                                        <p class="leftCap rightCap font-600">Total</p>
-                                                        <p class="rightCap total_donation_amount font-600">Rp. 20.000</p>
+                                                        <p class="leftCap font-600">Donasi Terkumpul Saat Ini</p>
+                                                        <p class="rightCap font-600">Rp.
+                                                            {{ number_format($project->current_amount) }}</p>
                                                     </li>
                                                 </ul>
                                             </div>

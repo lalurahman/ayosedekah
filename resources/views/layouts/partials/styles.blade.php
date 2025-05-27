@@ -2,7 +2,7 @@
     rel="icon"
     type="image/x-icon"
     sizes="20x20"
-    href="{{ asset('assets/images/icon/favicon.png') }}"
+    href="{{ asset('images/logo_ayosedekah.png') }}"
 >
 
 <!-- Bootstrap -->

@@ -8,7 +8,7 @@
                             <div class="header-left d-flex align-items-center justify-content-between">
                                 <!-- Logo-->
                                 <div class="logo logo-large light-logo">
-                                    <a href="index.html"><img
+                                    <a href="{{ route('home') }}"><img
                                             src="{{ asset('assets/images/logo.png') }}"
                                             width="80"
                                             alt="logo"
@@ -16,7 +16,7 @@
                                 </div>
                                 <!-- Logo Mobile-->
                                 <div class="logo logo-mobile light-logo">
-                                    <a href="index.html"><img
+                                    <a href="{{ route('home') }}"><img
                                             src="{{ asset('assets/images/logo.png') }}"
                                             width="60"
                                             alt="img"

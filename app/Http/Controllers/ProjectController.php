@@ -3,20 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\ProjectCategory;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        return view('pages.project.index');
+        $projects = Project::all();
+        return view('pages.project.index', compact([
+            'projects',
+        ]));
     }
 
     public function show($slug)
     {
         $project = Project::where('slug', $slug)->first();
+        $categories = ProjectCategory::all();
         return view('pages.project.show', compact([
             'project',
+            'categories',
         ]));
     }
 

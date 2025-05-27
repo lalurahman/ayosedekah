@@ -182,162 +182,62 @@
                 </div>
             </div>
             <div class="row gy-24">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
-                    <div
-                        class="single-donate h-calc wow fadeInUp"
-                        data-wow-delay="0.0s"
-                    >
-                        <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
-                                    class="w-100"
-                                    src="{{ asset('assets/images/gallery/donate-1.png') }}"
-                                    alt="img"
-                                > </a>
-                            <div class="donate-badge">
-                                <p class="subtitle">Food</p>
+                @foreach ($projects as $item)
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+                        <div
+                            class="single-donate h-calc wow fadeInUp"
+                            data-wow-delay="0.0s"
+                        >
+                            <div class="donate-img position-relative">
+                                <a href="{{ route('project.show', $item->slug) }}"> <img
+                                        class="w-100"
+                                        src="{{ asset('storage/' . $item->image) }}"
+                                        alt="img"
+                                    > </a>
+                                <div class="donate-badge">
+                                    <p class="subtitle">{{ $item->projectCategory->name }}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="donate-info">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="blog-details.html">We assure you
-                                            that your donation will be used wisely.</a></h4>
-                                    <p class="subtitle">We understand that there are many people organization The
-                                        seeking support,</p>
-                                    <div class="progress custom-progress-two">
-                                        <div
-                                            class="progress-bar"
-                                            style="width: 25%"
-                                        ></div>
-                                    </div>
-                                    <div class="flex justify-content-between mt-14 mb-20">
-                                        <div class="flex gap-20">
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Goals</h4>
+                            <div class="donate-info">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="donate-info-title">
+                                        <h4 class="title text-capitalize">
+                                            <a href="{{ route('project.show', $item->slug) }}">{{ $item->title }}</a>
+                                        </h4>
+                                        <p class="subtitle">
+                                            {{ $item->description }}
+                                        </p>
+                                        {{-- <div class="progress custom-progress-two">
+                                            <div
+                                                class="progress-bar"
+                                                style="width: 100%"
+                                            ></div>
+                                        </div> --}}
+                                        {{-- <div class="flex justify-content-between mt-14 mb-20">
+                                            <div class="flex gap-20">
+                                                <div class="charges">
+                                                    <p class="pera">Rp. {{ number_format($item->goal_amount) }}</p>
+                                                    <h4 class="title">Goals</h4>
+                                                </div>
+                                                <div class="charges">
+                                                    <p class="pera">Rp. {{ $item->current_amount }}</p>
+                                                    <h4 class="title">Raised</h4>
+                                                </div>
                                             </div>
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Raised</h4>
+                                            <div class="forward-btn">
+                                                <i class="ri-reply-fill"></i>
                                             </div>
-                                        </div>
-                                        <div class="forward-btn">
-                                            <i class="ri-reply-fill"></i>
-                                        </div>
+                                        </div> --}}
+                                        <a
+                                            href="{{ route('project.show', $item->slug) }}"
+                                            class="btn donate-btn w-100"
+                                        >Donasi Sekarang</a>
                                     </div>
-                                    <a
-                                        href="donate-payment.html"
-                                        class="btn donate-btn w-100"
-                                    >Donate Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
-                    <div
-                        class="single-donate h-calc wow fadeInUp"
-                        data-wow-delay="0.1s"
-                    >
-                        <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
-                                    class="w-100"
-                                    src="{{ asset('assets/images/gallery/donate-2.png') }}"
-                                    alt="img"
-                                > </a>
-                            <div class="donate-badge">
-                                <p class="subtitle">Education</p>
-                            </div>
-                        </div>
-                        <div class="donate-info">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you
-                                            that your donation will be used wisely.</a></h4>
-                                    <p class="subtitle">We understand that there are many people organization The
-                                        seeking support,</p>
-                                    <div class="progress custom-progress-two">
-                                        <div
-                                            class="progress-bar"
-                                            style="width: 65%"
-                                        ></div>
-                                    </div>
-                                    <div class="flex justify-content-between mt-14 mb-20">
-                                        <div class="flex gap-20">
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Goals</h4>
-                                            </div>
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Raised</h4>
-                                            </div>
-                                        </div>
-                                        <div class="forward-btn">
-                                            <i class="ri-reply-fill"></i>
-                                        </div>
-                                    </div>
-                                    <a
-                                        href="donate-payment.html"
-                                        class="btn donate-btn w-100"
-                                    >Donate Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
-                    <div
-                        class="single-donate h-calc wow fadeInUp"
-                        data-wow-delay="0.2s"
-                    >
-                        <div class="donate-img position-relative">
-                            <a href="donate-payment.html"> <img
-                                    class="w-100"
-                                    src="{{ asset('assets/images/gallery/donate-1.png') }}"
-                                    alt="img"
-                                > </a>
-                            <div class="donate-badge">
-                                <p class="subtitle">medical</p>
-                            </div>
-                        </div>
-                        <div class="donate-info">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="donate-info-title">
-                                    <h4 class="title text-capitalize"><a href="donate-payment.html">We assure you
-                                            that your donation will be used wisely.</a></h4>
-                                    <p class="subtitle">We understand that there are many people organization The
-                                        seeking support,</p>
-                                    <div class="progress custom-progress-two">
-                                        <div
-                                            class="progress-bar"
-                                            style="width: 85%"
-                                        ></div>
-                                    </div>
-                                    <div class="flex justify-content-between mt-14 mb-20">
-                                        <div class="flex gap-20">
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Goals</h4>
-                                            </div>
-                                            <div class="charges">
-                                                <p class="pera">$15.000</p>
-                                                <h4 class="title">Raised</h4>
-                                            </div>
-                                        </div>
-                                        <div class="forward-btn">
-                                            <i class="ri-reply-fill"></i>
-                                        </div>
-                                    </div>
-                                    <a
-                                        href="donate-payment.html"
-                                        class="btn donate-btn w-100"
-                                    >Donate Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
