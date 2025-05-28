@@ -91,10 +91,10 @@
                                 </div>
                             </div>
                             <div class="flex gap-16 flex-wrap">
-                                <button
-                                    type="submit"
+                                <a
+                                    href="{{ route('project.donate', $project->slug) }}"
                                     class="submit-btn"
-                                >Donasi Sekarang</button>
+                                >Donasi Sekarang</a>
                             </div>
                         </div>
                     </div>
